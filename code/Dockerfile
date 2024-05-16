@@ -9,6 +9,9 @@ RUN apt update
 RUN apt install -y python3 python3-pip
 
 # Step 4. Install fastapi and uvicorn with pip
+# Uvicorn is a web server. It handles network communication - receiving requests from client applications such as users' 
+# browsers and sending responses to them
+
 RUN python3 -m pip install fastapi uvicorn
 
 # Step 5: Copying python code inside the image
